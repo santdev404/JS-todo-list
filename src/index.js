@@ -5,12 +5,17 @@ import { crearTodoHtml } from './js/componentes';
 
 
 export const todoList = new TodoList();
-const tarea = new Todo('aprender JS');
+// const tarea = new Todo('aprender JS');
 
+// todoList.nuevoTodo(tarea);
 
+// crearTodoHtml(tarea);
 
-todoList.nuevoTodo(tarea);
+// todoList.todos.forEach( todo => crearTodoHtml( todo ) );
 
-crearTodoHtml(tarea);
+todoList.todos.forEach( crearTodoHtml );
+
+console.log('todos', todoList.todos);
+
 
 
